@@ -10,20 +10,8 @@ void print_buffer(char buffer[], int *buff_ind);
  * _printf - Printf function
  * @format: format.
  * Return: Printed chars.
-=======
-
->>>>>>> 261b66e6b422a20104aa12f29efdf98e91dcf57e
-
-
-/**
- * _printf - prints function for conversion characters
- * @format: string to print (char *)
- * Description: This function will callget_print() function
- * which determines which printing function to call
- * depending on the conversion specifiers in fmt.
- * Return: Printed characters printed
->>>>>>> 1f27ae26ab340bc1481c5197a998b144a2baa951:_printf.c
  */
+
 int _printf(const char *format, ...)
 {
 	int i, printed = 0, printed_chars = 0;
@@ -36,13 +24,13 @@ int _printf(const char *format, ...)
 	va_start(list, format);
 	for (i = 0; format && format[i] != '\0'; i++)
 	{
-	if (format[i] != '%')
+		if (format[i] != '%')
 		{
-		buffer[buff_ind++] = format[i];
-		if (buff_ind == BUFF_SIZE)
-			print_buffer(buffer, &buff_ind);
-		/* write(1, &format[i], 1);*/
-		printed_chars++;
+			buffer[buff_ind++] = format[i];
+			if (buff_ind == BUFF_SIZE)
+				print_buffer(buffer, &buff_ind);
+			/* write(1, &format[i], 1);*/
+			printed_chars++;
 		}
 		else
 		{

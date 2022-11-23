@@ -1,6 +1,18 @@
 #include "main.h"
 
+<<<<<<< HEAD
 void print_buffer (char buffer[], int *buff_ind);
+=======
+<<<<<<< HEAD:printf.c
+void print_buffer(char buffer[], int *buff_ind);
+
+/**
+ * _printf - Printf function
+ * @format: format.
+ * Return: Printed chars.
+=======
+
+>>>>>>> 261b66e6b422a20104aa12f29efdf98e91dcf57e
 
 
 /**
@@ -10,6 +22,7 @@ void print_buffer (char buffer[], int *buff_ind);
  * which determines which printing function to call
  * depending on the conversion specifiers in fmt.
  * Return: Printed characters printed
+>>>>>>> 1f27ae26ab340bc1481c5197a998b144a2baa951:_printf.c
  */
 int _printf(const char *format, ...)
 {
@@ -53,11 +66,8 @@ int _printf(const char *format, ...)
 
 /**
  * print_buffer - Prints the contents of the buffer if it exist
- *
  * @buffer: Array of chars
- *
  * @buff_ind: Index at which to add next char, represents the length.
- *
  */
 void print_buffer(char buffer[], int *buff_ind)
 {

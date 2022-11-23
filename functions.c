@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_char - Prints a char
- * @types: List a of arguments
+ * @types: List of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: Width
@@ -15,6 +15,8 @@ int print_char(va_list types, char buffer[],
 	char c = va_arg(types, int);
 
 	return (handle_write_char(c, buffer, flags, width, precision, size));
+}
+
 /**
  * print_string - Prints a string
  * @types: List a of arguments
